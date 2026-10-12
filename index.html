@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Family Table – Meal Plan</title>
+<style>
+:root{--bg:#faf6ef;--card:#fff;--ink:#2b2622;--mut:#7a6f66;--acc:#c0562f;--ok:#3e7d4f}
+*{box-sizing:border-box}body{margin:0;font:16px/1.45 system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+.banner{background:#ffe08a;color:#4a3600;font-weight:700;padding:10px 14px;font-size:14px;border-bottom:2px solid #e0b93c;}
+header{padding:14px 16px 4px}header h1{margin:0;font-size:22px;font-family:Georgia,serif}header p{margin:2px 0;color:var(--mut);font-size:13px}
+nav{display:flex;gap:6px;overflow-x:auto;padding:8px 12px;background:var(--bg)}
+nav button{flex:none;border:1px solid #ddd0c2;background:#fff;border-radius:20px;padding:8px 14px;font-size:14px}
+nav button.on{background:var(--acc);color:#fff;border-color:var(--acc)}
+main{padding:4px 12px 40px;max-width:720px;margin:auto}section{display:none}section.on{display:block}
+.card{background:var(--card);border-radius:14px;padding:14px;margin:10px 0;box-shadow:0 1px 3px #0001}
+.card h3{margin:0 0 4px;font-family:Georgia,serif;font-size:18px}.mut{color:var(--mut);font-size:13px}
+.seg{display:flex;margin-top:10px;border:1px solid #ddd0c2;border-radius:10px;overflow:hidden}
+.seg button{flex:1;border:0;background:#fff;padding:9px 2px;font-size:13px}.seg button.on{background:var(--ink);color:#fff}
+.gi{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-top:1px solid #f0e8de}.gi input{width:22px;height:22px;flex:none;margin-top:1px}
+.gi.done span{text-decoration:line-through;color:var(--mut)}
+.badge{display:inline-block;background:#d22;color:#fff;font-size:11px;font-weight:800;padding:2px 7px;border-radius:6px;margin-left:4px}
+.big{width:100%;font-size:22px;font-weight:700;padding:18px;border:0;border-radius:14px;background:#e9e0d5;margin:6px 0}
+.big.on{background:var(--ok);color:#fff}
+.rate button{font-size:20px;background:#fff;border:1px solid #ddd0c2;border-radius:10px;padding:6px 12px;margin-right:6px}.rate button.on{background:#ffe9c7;border-color:var(--acc)}
+table{border-collapse:collapse;width:100%;font-size:13px}td,th{border-bottom:1px solid #eee;padding:5px;text-align:left;vertical-align:top}
+li.sub{margin-left:18px;list-style:circle}details summary{cursor:pointer;font-weight:600}
+.staple{display:inline-block;background:#fff;border:1px solid #ddd0c2;border-radius:20px;padding:8px 14px;margin:4px}
+</style></head><body>
+<div style="position:sticky;top:0;z-index:5"><div class="banner">No cooked-egg dishes (scrambled, fried, boiled, omelet, quiche, egg fried rice). Baked-in egg is OK.</div><nav id="nav"></nav></div>
+<header><h1>Family Table</h1><p id="wk"></p></header><main>
+<section id="tab-week"></section><section id="tab-recipes"></section><section id="tab-grocery"></section>
+<section id="tab-status"></section><section id="tab-staples"></section></main>
+<script src="data.js"></script><script src="app.js"></script></body></html>
